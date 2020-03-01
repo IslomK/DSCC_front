@@ -1,0 +1,10 @@
+version: 0.0
+os: windows
+files:
+  - source: \
+    destination: C:\temp\WebApp\ProductApp
+  
+hooks:
+  BeforeInstall:
+    - location: .\StageArtifact.ps1
+    - location: .\CreateWebSite.ps1
