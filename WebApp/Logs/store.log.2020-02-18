@@ -1,0 +1,24 @@
+2020-02-18 13:51:17,508 INFO MonitoringLogger - i.islam.karimov@gmadi.com logined at 1/1/0001 12:00:00 AM
+2020-02-18 14:03:49,879 INFO MonitoringLogger - i.islam.karimov@gmai.com LOGGED IN at 1/1/0001 12:00:00 AM
+2020-02-18 14:04:29,746 INFO MonitoringLogger - i.islam.karimov@gmai.com CREATED PRODUCT AT 1/1/0001 12:00:00 AM
+2020-02-18 14:05:14,843 INFO MonitoringLogger - i.islam.karimov@gmai.com DELETED CATEGORY  at 1/1/0001 12:00:00 AM
+2020-02-18 14:16:47,158 INFO MonitoringLogger - ng@gmail.com REGISTERED AT: 2/18/2020 2:16:47 PM
+2020-02-18 14:18:55,830 INFO MonitoringLogger - i.islam.karimov@gmai.com LOGGED OUT at 2/18/2020 2:18:55 PM
+2020-02-18 14:19:01,460 INFO MonitoringLogger - ng@gmail.com LOGGED IN at 2/18/2020 2:19:01 PM
+2020-02-18 08:32:30,056 INFO MonitoringLogger - ng@gmail.com LOGGED OUT at 2/18/2020 8:32:30 AM
+2020-02-18 08:42:09,605 ERROR MonitoringLogger - Failure sending mail.
+2020-02-18 08:42:11,766 INFO MonitoringLogger - successfully sent message
+2020-02-18 08:42:11,767 INFO MonitoringLogger - i.islam.karimov@gmail.com REGISTERED AT: 2/18/2020 8:42:11 AM
+2020-02-18 09:55:09,867 INFO MonitoringLogger - islam.karimov.mans@gmail.com REGISTERED AT: 2/18/2020 9:55:09 AM
+2020-02-18 09:56:21,726 ERROR MonitoringLogger - Syntax error, command unrecognized. The server response was: 
+2020-02-18 10:42:49,507 INFO MonitoringLogger - i.islam.karimov@gmail.com REGISTERED AT: 2/18/2020 10:42:49 AM
+2020-02-18 10:42:51,239 INFO MonitoringLogger - SUCCESS SEND MAIL TO i.islam.karimov@gmail.com
+2020-02-18 10:45:20,631 INFO MonitoringLogger - i.islam.karimov@gmail.com REGISTERED AT: 2/18/2020 10:45:20 AM
+2020-02-18 10:45:30,523 ERROR MonitoringLogger - Failure sending mail.
+2020-02-18 10:45:30,523 INFO MonitoringLogger - SUCCESS SEND MAIL TO i.islam.karimov@gmail.com
+2020-02-18 22:18:16,853 INFO MonitoringLogger - i.islam.karimov@gmai.com LOGGED IN at 2/18/2020 10:18:16 PM
+2020-02-18 23:27:43,473 INFO MonitoringLogger - i.islam.karimov@gmai.com LOGGED IN at 2/18/2020 11:27:43 PM
+2020-02-18 23:28:04,829 INFO MonitoringLogger - i.islam.karimov@gmai.com DELETED PRODUCT 18 at 2/18/2020 11:28:04 PM
+2020-02-18 23:28:27,403 INFO MonitoringLogger - i.islam.karimov@gmai.com CREATED CATEGORY AT 2/18/2020 11:28:27 PM
+2020-02-18 23:28:38,323 INFO MonitoringLogger - i.islam.karimov@gmai.com DELETED CATEGORY  at 2/18/2020 11:28:38 PM
+2020-02-18 23:28:41,019 INFO MonitoringLogger - i.islam.karimov@gmai.com DELETED CATEGORY  at 2/18/2020 11:28:41 PM

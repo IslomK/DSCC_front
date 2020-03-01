@@ -1,0 +1,46 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Add Product</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input required ng-model="name" class="form-control" id="title" placeholder="Enter title">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input required ng-model="price" type="number" class="form-control" id="price" placeholder="Enter price">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        {{categories}}
+                        <select required ng-model="categoryId" class="form-control" type="number" id="category">
+                            <option ng-repeat="category in categories" value="{{category.categoryId}}" >
+                                {{category.title}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input ng-model="description" class="form-control" id="description" placeholder="Enter description">
+                    </div>
+
+                </div>
+                <!-- /.box-body -->
+
+                <div class="box-footer">
+                    <a href="/#/productList" type="submit" ng-click="add(); getProductList();" class="btn btn-primary">Submit</a>
+                </div>
+            </form>
+        </div>
+        <!-- /.box -->
+        <!-- /.box -->
+
+    </div>
+</div>

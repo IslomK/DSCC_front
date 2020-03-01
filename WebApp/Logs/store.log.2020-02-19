@@ -1,0 +1,46 @@
+2020-02-19 11:51:59,619 INFO MonitoringLogger - Starting creating user
+2020-02-19 11:52:00,882 INFO MonitoringLogger - islam.karimov.mans@gmail.com REGISTERED AT: 2/19/2020 11:52:00 AM
+2020-02-19 11:52:02,320 INFO MonitoringLogger - SUCCESS SEND MAIL TO islam.karimov.mans@gmail.com
+2020-02-19 11:52:10,951 INFO MonitoringLogger - islam.karimov.mans@gmail.com LOGGED IN 
+2020-02-19 12:39:54,263 ERROR MonitoringLogger - FAIL WITH WRONG CREDENTIALS  EMAIL: i.islam.karimov@gmai.com
+2020-02-19 12:40:06,480 ERROR MonitoringLogger - FAIL WITH WRONG CREDENTIALS  EMAIL: i.islam.karimov@gmai.com
+2020-02-19 12:40:11,648 ERROR MonitoringLogger - FAIL WITH WRONG CREDENTIALS  EMAIL: i.islam.karimov@gmai.com
+2020-02-19 12:40:14,427 ERROR MonitoringLogger - FAIL WITH WRONG CREDENTIALS  EMAIL: i.islam.karimov@gmai.com
+2020-02-19 12:41:46,832 INFO MonitoringLogger - islam.karimov.mans@gmail.com LOGGED IN 
+2020-02-19 12:48:40,578 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED CATEGORY AT 2/19/2020 12:48:40 PM
+2020-02-19 12:48:46,684 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED CATEGORY AT 2/19/2020 12:48:46 PM
+2020-02-19 12:50:00,714 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED CATEGORY AT 2/19/2020 12:50:00 PM
+2020-02-19 12:51:38,542 INFO MonitoringLogger - islam.karimov.mans@gmail.com UPDATED PRODUCT 24 at 2/19/2020 12:51:38 PM
+2020-02-19 12:52:34,965 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED PRODUCT 0
+2020-02-19 12:54:50,344 INFO MonitoringLogger - islam.karimov.mans@gmail.com LOGGED OUT at 2/19/2020 12:54:50 PM
+2020-02-19 13:02:45,277 INFO MonitoringLogger - islam.karimov.mans@gmail.com LOGGED IN 
+2020-02-19 13:14:38,070 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 25 at 2/19/2020 1:14:38 PM
+2020-02-19 13:36:35,716 INFO MonitoringLogger - islam.karimov.mans@gmail.com UPDATED CATEGORY 2 at 2/19/2020 1:36:35 PM
+2020-02-19 13:36:45,814 INFO MonitoringLogger - islam.karimov.mans@gmail.com UPDATED CATEGORY 11 at 2/19/2020 1:36:45 PM
+2020-02-19 14:08:27,706 ERROR MonitoringLogger - FAIL WITH WRONG CREDENTIALS  EMAIL: i.islam.karimov@gmai.com
+2020-02-19 14:08:36,777 INFO MonitoringLogger - islam.karimov.mans@gmail.com LOGGED IN 
+2020-02-19 14:08:49,316 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED PRODUCT 0
+2020-02-19 14:09:36,536 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED PRODUCT 0
+2020-02-19 14:09:53,311 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 38 at 2/19/2020 2:09:53 PM
+2020-02-19 14:09:53,961 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 35 at 2/19/2020 2:09:53 PM
+2020-02-19 14:09:54,453 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 34 at 2/19/2020 2:09:54 PM
+2020-02-19 14:09:54,875 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 33 at 2/19/2020 2:09:54 PM
+2020-02-19 14:09:55,371 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 32 at 2/19/2020 2:09:55 PM
+2020-02-19 14:09:55,855 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 30 at 2/19/2020 2:09:55 PM
+2020-02-19 14:09:56,354 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 24 at 2/19/2020 2:09:56 PM
+2020-02-19 14:09:56,789 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 22 at 2/19/2020 2:09:56 PM
+2020-02-19 14:10:00,758 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 41 at 2/19/2020 2:10:00 PM
+2020-02-19 14:10:01,240 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 40 at 2/19/2020 2:10:01 PM
+2020-02-19 14:10:01,673 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 39 at 2/19/2020 2:10:01 PM
+2020-02-19 14:10:02,338 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 21 at 2/19/2020 2:10:02 PM
+2020-02-19 14:10:08,475 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED PRODUCT 12 at 2/19/2020 2:10:08 PM
+2020-02-19 14:10:23,178 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED CATEGORY  at 2/19/2020 2:10:23 PM
+2020-02-19 14:10:23,996 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED CATEGORY  at 2/19/2020 2:10:23 PM
+2020-02-19 14:10:24,199 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED CATEGORY  at 2/19/2020 2:10:24 PM
+2020-02-19 14:10:24,401 INFO MonitoringLogger - islam.karimov.mans@gmail.com DELETED CATEGORY  at 2/19/2020 2:10:24 PM
+2020-02-19 14:11:13,967 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED CATEGORY AT 2/19/2020 2:11:13 PM
+2020-02-19 14:12:10,531 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED CATEGORY AT 2/19/2020 2:12:10 PM
+2020-02-19 14:12:38,810 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED CATEGORY AT 2/19/2020 2:12:38 PM
+2020-02-19 14:13:03,937 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED PRODUCT 0
+2020-02-19 14:13:31,565 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED PRODUCT 0
+2020-02-19 14:13:59,676 INFO MonitoringLogger - islam.karimov.mans@gmail.com CREATED PRODUCT 0

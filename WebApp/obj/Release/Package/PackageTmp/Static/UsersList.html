@@ -1,0 +1,39 @@
+﻿<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">Users</h3>
+    </div>
+    <div class="box-body">
+        <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+            <div class="row">
+                <div class="col-sm-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                            <tr role="row">
+                                <th class="sorting" tabindex="0">ID</th>
+                                <th class="sorting">First Name</th>
+                                <th class="sorting">Last Name</th>
+                                <th class="sorting">Email</th>
+                                <th class="sorting">DOB</th>
+                                <th class="sorting">Avatar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="user in users" role="row" class="odd">
+                                <td class="sorting_1 id_column">{{user.UserId}}</td>
+                                <td>{{user.FirstName}}</td>
+                                <td>{{user.LastName}}</td>
+                                <td>{{user.Email}}</td>
+                                <td>{{user.DOB}}</td>
+                                <td><img style="width: 50px" src="{{user.Avatar == null ? '/Content/img/member-default.jpg' : user.Avatar}}" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
