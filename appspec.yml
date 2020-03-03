@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: \
+  - source: \WebApp\
     destination: c:\inetpub\wwwroot\webtest\
   
 hooks:
