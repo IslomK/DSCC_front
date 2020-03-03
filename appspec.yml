@@ -8,6 +8,9 @@ hooks:
   BeforeInstall:
     - location: \deletewebsite.bat
       timeout: 180
+      runas: Administrator
   AfterInstall:
     - location: \installwebsite.bat
       timeout: 180
+      runas: Administrator
+
