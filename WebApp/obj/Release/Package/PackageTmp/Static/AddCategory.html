@@ -11,16 +11,12 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input ng-model="category.CategoryTitle" class="form-control" id="title" placeholder="Enter title">
-                    </div>
-                    <div class="form-group">
-                        <label for="price">Descr</label>
-                        <input ng-model="category.Description" type="text" class="form-control" id="price" placeholder="Enter description">
+                        <input ng-model="title" class="form-control" id="title" placeholder="Enter title">
                     </div>
                 </div>
                
                 <div class="box-footer">
-                    <a href="/#/categoriesList" type="submit" ng-click="addCategory(); getCtegories();" class="btn btn-primary">Submit</a>
+                    <a href="/#/categoriesList" type="submit" ng-click="addCategory(); getCategories();" class="btn btn-primary">Submit</a>
                 </div>
             </form>
         </div>

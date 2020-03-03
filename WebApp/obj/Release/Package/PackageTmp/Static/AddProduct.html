@@ -11,17 +11,18 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input ng-model="title" class="form-control" id="title" placeholder="Enter title">
+                        <input required ng-model="name" class="form-control" id="title" placeholder="Enter title">
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>
-                        <input ng-model="price" type="number" class="form-control" id="price" placeholder="Enter price">
+                        <input required ng-model="price" type="number" class="form-control" id="price" placeholder="Enter price">
                     </div>
                     <div class="form-group">
                         <label for="category">Category</label>
-                        <select ng-model="category" class="form-control" type="number" id="category">
-                            <option value="{{category.CategoryId}}" ng-repeat="category in categories">
-                                {{category.CategoryTitle}}
+                        {{categories}}
+                        <select required ng-model="categoryId" class="form-control" type="number" id="category">
+                            <option ng-repeat="category in categories" value="{{category.categoryId}}" >
+                                {{category.title}}
                             </option>
                         </select>
                     </div>

@@ -1,10 +1,9 @@
 version: 0.0
 os: windows
 files:
-  - source: \
+  - source: \WebApp\
     destination: C:\temp\WebApp\ProductApp
   
 hooks:
   BeforeInstall:
-    - location: .\StageArtifacts.ps1
-    - location: .\CreateWebSite.ps1
+    - location: .\before-install.bat

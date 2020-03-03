@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="MyContextDB-Web.config Connection String" description="MyContextDB Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StoreDb.mdf;Integrated Security=True; MultipleActiveResultSets=true" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Islom\\source\\repos\\WebApp\\WebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyContextDB']/@connectionString" />
-  </parameter>
-  <parameter name="MyContextDB_DatabasePublish-Web.config Connection String" description="MyContextDB_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="MyContextDB_DatabasePublish.ConnetionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Islom\\source\\repos\\WebApp\\WebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyContextDB_DatabasePublish']/@connectionString" />
-  </parameter>
-</parameters>
