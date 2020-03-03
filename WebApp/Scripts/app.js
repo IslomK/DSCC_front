@@ -45,7 +45,7 @@ indexApp
             });
     })
     .controller('productController', function ($rootScope, $scope, $http) {
-        var api_url = 'https://localhost:44332'
+        var api_url = 'http://54.208.73.79/api/products'
         var productObject = {
             name: '',
             categoryId: '',
