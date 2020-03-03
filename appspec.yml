@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: \WebApp\
-    destination: c:\inetpub\wwwroot\webtest\
+    destination: c:\inetpub\wwwroot\
   
 hooks:
   BeforeInstall:
