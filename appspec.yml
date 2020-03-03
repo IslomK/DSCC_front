@@ -1,16 +1,16 @@
 version: 0.0
 os: windows
 files:
-  - source: \WebApp\favicon.ico
-    destination: c:\inetpub\wwwroot\webtest
+  - source: \
+    destination: c:\inetpub\wwwroot\
   
 hooks:
   BeforeInstall:
     - location: \deletewebsite.bat
       timeout: 180
-      runas: Administrator
+      runas: administrator
   AfterInstall:
     - location: \installwebsite.bat
       timeout: 180
-      runas: Administrator
+      runas: administrator
 
