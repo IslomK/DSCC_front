@@ -45,6 +45,7 @@ indexApp
             });
     })
     .controller('productController', function ($rootScope, $scope, $http) {
+        var api_url = 'https://localhost:44332'
         var productObject = {
             name: '',
             categoryId: '',
@@ -54,115 +55,70 @@ indexApp
             pageSize: '',
             order_by: ''
         };
-        $scope.addCategory = function () {
-            $http({
-                method: "POST",
-                url: "/api/categories/",
-                data: $scope.category
-            })
-        }
-        $scope.deleteCategory = function (category) {
-            $http.delete('/api/categories/' + category.CategoryId).then(function(){
-                var index = $scope.categories.indexOf(category);
-                $scope.categories.splice(index, 1)
-            })
-        }
+
         $rootScope.getProductList = function (obj) {
             productObject = { ...productObject, ...obj }
             $http({
-                url: '/api/businesses',
+                url: api_url + '/api/products',
                 method: "GET",
-                params: {
-                    ...productObject
-                }
             }).then(function (response) {
-                $rootScope.products = response.data;
-                $scope.product_count = response.data.length;
-                console.log(response.data)
-                $scope.pagination_data = angular.fromJson(response.headers("paging-headers"))
-                for (i in response.data) {
-                    $scope.products[i].categoryTitle = getProductCategory(i);
-                }
+                $rootScope.products = response.data
             });
         }
         $scope.getProduct = function (id) {
-            $http.get("api/businesses/" + id).then(function (response) {
+            $http.get(api_url + "/api/products/" + id).then(function (response) {
                 $rootScope.product = response.data;
             })
         };
-        $rootScope.getCategories = function () {
-            $http.get('/api/categories').then(function (response) {
-                $rootScope.categories = response.data
-            })
-        }
-        $rootScope.getCategories();
         $scope.delete = function (product) {
-            $http.delete('/api/businesses/' + product.BusinessId).then(function (response) {
+            $http.delete(api_url + '/api/products/' + product.productId).then(function (response) {
                 var index = $scope.products.indexOf(product);
                 $scope.products.splice(index, 1);
-                $scope.product_count = $scope.product_count - 1;
-                $scope.pagination_data.totalPages = $scope.pagination_data.totalPages - 1;
             });
         }
-        $scope.getUsers = function () {
-            $http({
-                method: 'GET',
-                url: 'api/users/'
-            }).then(function (response) {
-                $scope.users = response.data;
-            })
-        }
-        $scope.getUser = function (id) {
-            $http({
-                url: 'api/users/' + id,
-                method: 'GET'
-            }).then(function (response) {
-                $scope.user = response.data
-            })
-        }
-        function getProductCategory(id) {
-            for (j in $scope.categories) {
-                if ($scope.categories[j].CategoryId == $scope.products[id].CategoryId) {
-                    return $scope.categories[j].CategoryTitle;
-                }
-            };
-        }
-
         $scope.add = function () {
             var data = {
-                Title: $scope.title,
+                Name: $scope.name,
                 Price: $scope.price,
-                CategoryId: $scope.category,
+                CategoryId: $scope.categoryId,
                 Description: $scope.description
             };
-
-            $http.post("/api/businesses", data).then(function (response) {
-                $scope.products.push(response.data);
+            console.log(data);
+            $http.post(api_url + "/api/products", data).then(function (response) {
                 $scope.product_count += 1;
             });
-            
+
         };
         $scope.updateProduct = function (id) {
             var data = {
-                BusinessId: id,
-                Title: $scope.product.Title,
-                Price: $scope.product.Price,
-                CategoryId: $scope.product.CategoryId.CategoryId,
-                Description: $scope.product.Description
+                ProductId: id,
+                Name: $scope.product.name,
+                Price: $scope.product.price,
+                CategoryId: $scope.product.categoryId,
+                Description: $scope.product.description
             };
             $http({
-                method: 'PUT', 
-                url: "/api/businesses/" + id,
+                method: 'PUT',
+                url: api_url + "/api/products/" + id,
                 data: data
             })
-            .then(function (response) {
-                $rootScope.getProductList();
+                .then(function (response) {
+                    $rootScope.getProductList();
+                })
+        }
+
+
+        $rootScope.getCategories = function () {
+            $http.get(api_url + '/api/categories').then(function (response) {
+                $rootScope.categories = response.data
+                console.log($rootScope.categories)
             })
         }
+        $rootScope.getCategories();
         $scope.getCategory = function (id) {
             $http({
                 method: "GET",
-                url: "/api/categories/" + id
+                url: api_url + "/api/categories/" + id
             }).then(function (response) {
                 $rootScope.category = response.data
             })
@@ -170,9 +126,23 @@ indexApp
         $scope.editCategory = function (id) {
             $http({
                 method: 'PUT',
-                url: "/api/categories/" + id,
+                url: api_url + "/api/categories/" + id,
                 data: $scope.category
             })
         }
-
+        $scope.addCategory = function () {
+            $http({
+                method: "POST",
+                url: api_url + "/api/categories/",
+                data: {
+                    Title: $scope.title
+                }
+            })
+        }
+        $scope.deleteCategory = function (category) {
+            $http.delete(api_url + '/api/categories/' + category.categoryId).then(function () {
+                var index = $scope.categories.indexOf(category);
+                $scope.categories.splice(index, 1)
+            })
+        }
     })

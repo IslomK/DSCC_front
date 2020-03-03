@@ -7,14 +7,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="dataTables_length" id="example1_length">
-                            <label>
-                                Show
-                                <select name="example1_length" ng-model="productCount" ng-change="getProductList({pageSize: productCount})" aria-controls="example1" class="form-control input-sm">
-                                    <option selected="selected" value="10">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                </select> entries
-                            </label>
+                            
                         </div>
                     </div>
                     <div class="col-sm-6 right" style="text-align: right">
@@ -35,30 +28,15 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr role="row" class="even">
-                                    <td></td>
-                                    <td><input type="search" class="form-control input-sm" placeholder="Search" ng-model="prodTitle" ng-change="getProductList({name: prodTitle})"></td>
-                                    <td>
-                                        <input type="number" class="form-control input-sm" placeholder="Min" ng-model="min_price" ng-change="getProductList({minPrice: min_price})" aria-controls="example1">
-                                        <input type="number" class="form-control input-sm" placeholder="Max" ng-model="max_price" ng-change="getProductList({maxPrice: max_price})" aria-controls="example1">
-                                    </td>
-                                    <td>
-                                        <select ng-model="catFilter" ng-change="getProductList({categoryId: catFilter})" class="form-control input-sm">
-                                            <option value="">All</option>
-                                            <option value="{{category.CategoryId}}" ng-repeat="category in categories">
-                                                {{category.CategoryTitle}}
-                                            </option>
-                                        </select>
-                                    </td>
-                                </tr>
+                                
                                 <tr ng-repeat="product in products" role="row" class="odd">
-                                    <td class="sorting_1 id_column">{{product.BusinessId}}</td>
-                                    <td>{{product.Title}}</td>
-                                    <td>{{product.Price}}</td>
-                                    <td>{{product.categoryTitle}}</td>
-                                    <td>{{product.Description}}</td>
+                                    <td class="sorting_1 id_column">{{product.productId}}</td>
+                                    <td>{{product.name}}</td>
+                                    <td>{{product.price}}</td>
+                                    <td>{{product.category.title}}</td>
+                                    <td>{{product.description}}</td>
                                     <td>
-                                        <a href="/#/productEdit" ng-click="getProduct(product.BusinessId)" type="button" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                        <a href="/#/productEdit" ng-click="getProduct(product.productId)" type="button" class="btn btn-success"><i class="fa fa-edit"></i></a>
                                         <button ng-click="delete(product)" type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                                     </td>
                                 </tr>
@@ -69,24 +47,11 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
-                        <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">
-                            Showing {{pagination_data.from}} to {{product_count + pagination_data.from - 1}} of {{pagination_data.totalCount}} entries
-                        </div>
+
                     </div>
                     <div class="col-sm-7">
                     <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
-                        <ul class="pagination">
-                        <li class="paginate_button previous {{pagination_data.currentPage == 1 ? 'disabled' : ''}}">
-                            <a style="{{pagination_data.currentPage == 1 ? 'pointer-events: none;' : ''}}" ng-click="getProductList({pageNumber: pagination_data.currentPage - 1})" >Previous</a>
-                            </li>
-                        <li ng-repeat="x in [].constructor(pagination_data.totalPages) track by $index" class="paginate_button {{ $index+1 == pagination_data.currentPage ? 'active' : '' }}">
-                            <a href="#example1_wrapper" ng-click="getProductList({pageNumber: $index+1})">{{$index+1}}</a>
-                         </li>
-                        <li  class="paginate_button next {{pagination_data.currentPage == pagination_data.totalPages ? 'disabled' : ''}}">
-                            <a href="#example1_wrapper" style="{{pagination_data.currentPage == pagination_data.totalPages ? 'pointer-events: none' : ''}}" ng-click="getProductList({pageNumber: pagination_data.currentPage + 1})">Next</a>
-                            </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

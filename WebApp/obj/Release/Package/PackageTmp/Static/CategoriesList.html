@@ -18,17 +18,15 @@
                             <tr role="row">
                                 <th class="sorting" tabindex="0">ID</th>
                                 <th class="sorting">Category Name</th>
-                                <th class="sorting">Category Description</th>
                                 <th> Action </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="category in categories" role="row" class="odd">
-                                <td class="sorting_1 id_column">{{category.CategoryId}}</td>
-                                <td>{{category.CategoryTitle}}</td>
-                                <td>{{category.Description}}</td>
+                                <td class="sorting_1 id_column">{{category.categoryId}}</td>
+                                <td>{{category.title}}</td>
                                 <td>
-                                    <a ng-click="getCategory(category.CategoryId)" href="/#/categoriesEdit" type="button" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                    <a ng-click="getCategory(category.categoryId)" href="/#/categoriesEdit" type="button" class="btn btn-success"><i class="fa fa-edit"></i></a>
                                     <button ng-click="deleteCategory(category);" type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                                 </td>
                             </tr>

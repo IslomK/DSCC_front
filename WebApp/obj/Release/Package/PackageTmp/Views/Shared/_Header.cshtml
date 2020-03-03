@@ -1,7 +1,4 @@
-﻿@using Microsoft.AspNet.Identity;
-@{
-    var user = ViewBag.User;
-}
+﻿
 <header class="main-header">
     <a href="@Url.Action("Index", "Home")" class="logo">
 
@@ -12,31 +9,7 @@
         </a>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <li class="dropdown user user-menu">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
-                        <img class="user-image" alt="User Image" src="@(user.Avatar == null ? "/Content/img/member-default.jpg": user.Avatar)">
-                        <span class="hidden-xs">@user.GetFullName()</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="user-header">
-                            <img src="@(user.Avatar == null ? "/Content/img/member-default.jpg": user.Avatar)" class="img-circle" alt="User Image">
-
-                            <p>
-                                @user.Email
-                                <small>@user.DOB</small>
-                            </p>
-                        </li>
-    
-                        <li class="user-footer">
-                            <div class="pull-left">
-                                <a ng-click="getUser(@user.UserId)" href="/#/userPage" class="btn btn-default btn-flat">Profile</a>
-                            </div>
-                            <div class="pull-right">
-                                <a href="@Url.Action("Logout", "Home")" class="btn btn-default btn-flat">Sign out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
+                
             </ul>
         </div>
     </nav>

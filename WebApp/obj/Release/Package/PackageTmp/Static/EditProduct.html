@@ -8,26 +8,29 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input ng-model="product.Title" class="form-control" id="title" placeholder="Enter title">
+                        <input required ng-model="product.name" class="form-control" id="title" placeholder="Enter title">
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>
-                        <input ng-model="product.Price" type="number" class="form-control" id="price" placeholder="Enter price">
+                        <input required ng-model="product.price" type="number" class="form-control" id="price" placeholder="Enter price">
                     </div>
                     <div class="form-group">
                         <label for="category">Category</label>
-                        <select  ng-model="product.CategoryId" ng-options="categoryItem.CategoryTitle for categoryItem in categories track by categoryItem.CategoryId" class="form-control" type="number" id="category">
+                        <select class="form-control" ng-model="product.categoryId">
+                            <option value="{{category.categoryId}}" ng-repeat="category in categories" selected="{{product.categoryId == category.categoryId? 'selected": ''}}">
+                                {{category.title}}
+                            </option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <input ng-model="product.Description" class="form-control" id="description" placeholder="Enter description">
+                        <input ng-model="product.description" class="form-control" id="description" placeholder="Enter description">
                     </div>
 
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
-                    <a href="/#" type="submit" ng-click="updateProduct(product.BusinessId); getProductList();" class="btn btn-primary">Submit</a>
+                    <a href="/#" type="submit" ng-click="updateProduct(product.productId); getProductList();" class="btn btn-primary">Submit</a>
                 </div>
             </form>
         </div>

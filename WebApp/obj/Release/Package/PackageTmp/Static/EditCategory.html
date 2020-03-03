@@ -8,15 +8,12 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input ng-model="category.CategoryTitle" class="form-control" id="title" placeholder="Enter title">
+                        <input ng-model="category.title" class="form-control" id="title" placeholder="Enter title">
                     </div>
-                    <div class="form-group">
-                        <label for="price">Descr</label>
-                        <input ng-model="category.Description" type="text" class="form-control" id="price" placeholder="Enter description">
-                    </div>
+
                 </div>
                 <div class="box-footer">
-                    <a href="/#/categoriesList" type="submit" ng-click="editCategory(category.CategoryId); getCategories();" class="btn btn-primary">Submit</a>
+                    <a href="/#/categoriesList" type="submit" ng-click="editCategory(category.categoryId); getCategories();" class="btn btn-primary">Submit</a>
                 </div>
             </form>
         </div>
