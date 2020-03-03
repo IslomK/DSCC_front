@@ -10,7 +10,7 @@ hooks:
       timeout: 180
       runas: administrator
   AfterInstall:
-    - location: \installwebsite.bat
+    - location: \installwebsite.ps1
       timeout: 180
       runas: administrator
 
